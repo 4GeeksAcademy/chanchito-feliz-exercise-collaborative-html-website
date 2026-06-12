@@ -1,0 +1,45 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+:root {
+    --tartaria-link: #0077ff;
+    /* azul neon escuro */
+    --tartaria-link-hover: #0094ff;
+    /* hover um pouco mais vivo */
+    --tartaria-link-active: #0057c7;
+    /* ativo mais profundo */
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --tartaria-link: #4da3ff;
+        --tartaria-link-hover: #74b8ff;
+        --tartaria-link-active: #2b7fe0;
+    }
+}
+
+.navbar-tartaria .navbar-brand,
+.navbar-tartaria .navbar-nav .nav-link {
+    color: var(--tartaria-link) !important;
+    text-shadow:
+        0 0 4px rgba(0, 119, 255, 0.45),
+        0 0 10px rgba(0, 119, 255, 0.35),
+        0 0 18px rgba(0, 119, 255, 0.25);
+}
+
+.navbar-tartaria .navbar-brand:hover,
+.navbar-tartaria .navbar-brand:focus,
+.navbar-tartaria .navbar-nav .nav-link:hover,
+.navbar-tartaria .navbar-nav .nav-link:focus {
+    color: var(--tartaria-link-hover) !important;
+    text-shadow:
+        0 0 5px rgba(0, 148, 255, 0.55),
+        0 0 12px rgba(0, 148, 255, 0.4),
+        0 0 22px rgba(0, 148, 255, 0.28);
+}
+
+.navbar-tartaria .navbar-nav .nav-link.active {
+    color: var(--tartaria-link-active) !important;
+}
