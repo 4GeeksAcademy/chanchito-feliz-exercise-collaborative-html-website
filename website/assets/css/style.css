@@ -5,11 +5,11 @@ body {
 
 :root {
     --tartaria-link: #0077ff;
-    /* azul neon escuro */
+
     --tartaria-link-hover: #0094ff;
-    /* hover um pouco mais vivo */
+
     --tartaria-link-active: #0057c7;
-    /* ativo mais profundo */
+
 }
 
 @media (prefers-color-scheme: dark) {
