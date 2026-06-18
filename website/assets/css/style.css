@@ -43,3 +43,16 @@ body {
 .navbar-tartaria .navbar-nav .nav-link.active {
     color: var(--tartaria-link-active) !important;
 }
+
+.hero video {
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+}
